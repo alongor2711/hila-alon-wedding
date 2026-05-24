@@ -240,8 +240,11 @@
     }
     .dt-name {
       flex: 1;
-      font-family: 'Great Vibes', cursive;
-      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: 0.05em;
       color: var(--deep);
       text-align: center;
     }
@@ -610,19 +613,14 @@
       nav a { font-size: 0.62rem; letter-spacing: 0.12em; }
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 
-      .dt-parallel { flex-direction: column; }
-      .dt-col-alon {
-        border-right: none;
-        border-left: 1px solid rgba(185,155,114,0.4);
-        border-bottom: 1px solid rgba(185,155,114,0.15);
-        padding-bottom: 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-      .dt-col-hila { border-left: 1px solid rgba(185,155,114,0.4); }
-      .dt-item { text-align: left; padding: 0.8rem 0 0.8rem 2rem; }
-      .dt-item::after { right: auto; left: 0; transform: translateX(-50%); }
-      .dt-col-hila .dt-item::after { left: 0; transform: translateX(-50%); }
-      .dt-funnel { display: none; }
+      .dt-item { padding: 0.55rem 0.7rem 0.55rem 0; }
+      .dt-col-hila .dt-item { padding: 0.55rem 0 0.55rem 0.7rem; }
+      .dt-item-desc { font-size: 0.85rem; }
+      .dt-item-year { font-size: 0.62rem; }
+      .dt-item::after { top: 1.05rem; width: 7px; height: 7px; }
+      .dt-col-hila .dt-item::after { width: 7px; height: 7px; }
+      .dt-name { font-size: 1.7rem; }
+      .dt-names { margin-bottom: 0.6rem; }
     }
   </style>
 </head>
